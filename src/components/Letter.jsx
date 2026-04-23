@@ -127,8 +127,10 @@ function LetterContent() {
 
     // For the active paragraph, show only charCount chars; completed ones show full text
     const isActive = idx === paraIndex && !done
-    const text = isActive ? para.text.slice(0, charCount) : para.text
-    const showCursor = isActive && charCount < para.text.length
+    // Defensive: ensure para.text is always a string
+    const safeText = typeof para.text === 'string' ? para.text : ''
+    const text = isActive ? safeText.slice(0, charCount) : safeText
+    const showCursor = isActive && charCount < safeText.length
 
     const cursor = showCursor ? <span className="cursor-blink" style={{ color: 'var(--terracotta)' }}>|</span> : null
 
