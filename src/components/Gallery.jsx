@@ -1,16 +1,25 @@
 import { useState, useEffect, useRef } from 'react'
 import { X, ChevronLeft, ChevronRight, Camera } from 'lucide-react'
+// import begun2023 from '../assets';
+
+// Import images from src/assets if you want to use them in the PHOTOS array
+import begun2023 from '../assets/begun_2023.jpeg';
+import buildFH2023 from '../assets/build_FH 2023.jpeg';
+import alwaysMovingForward from '../assets/always_moving_forward.jpeg';
+import courageNeverWavers from '../assets/Courage_that_never_wavers.jpeg';
+import faithStrength from '../assets/Faith_strength.jpeg';
+import lifeGettingBrighter from '../assets/life_getting_brighter_2026.jpeg';
 
 // PHOTO CONFIGURATION
 // Replace the src values with actual image paths (e.g. '/photos/pasha1.jpg')
 // Put image files in the /public/photos/ folder
 const PHOTOS = [
-  { src: '/photos/pasha1.jpg', caption: 'Where it all began — 2023', date: '2023' },
-  { src: '/photos/pasha2.jpg', caption: 'Building FH Technology together', date: '2023' },
-  { src: '/photos/pasha3.jpg', caption: 'Always moving forward', date: '2024' },
-  { src: '/photos/pasha4.jpg', caption: 'The courage that never wavers', date: '2024' },
-  { src: '/photos/pasha5.jpg', caption: 'Faith, strength, and a beautiful soul', date: '2024' },
-  { src: '/photos/pasha6.jpg', caption: 'A life that keeps getting brighter', date: '2025' },
+  { src: begun2023, caption: 'Where it all began — 2023', date: '2023' },
+  { src: buildFH2023, caption: 'Building FH Technology together', date: '2023' },
+  { src: alwaysMovingForward, caption: 'Always moving forward', date: '2024' },
+  { src: courageNeverWavers, caption: 'The courage that never wavers', date: '2024' },
+  { src: faithStrength, caption: 'Faith, strength, and a beautiful soul', date: '2024' },
+  { src: lifeGettingBrighter, caption: 'A life that keeps getting brighter', date: '2025' },
 ]
 
 function PhotoCard({ photo, index, onClick }) {

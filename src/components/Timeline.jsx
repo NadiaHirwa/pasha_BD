@@ -2,11 +2,11 @@ import { useEffect, useRef, useState } from 'react'
 import { Sprout, Rocket, Plane, Globe, Heart } from 'lucide-react'
 
 const EVENTS = [
-  { year: '2023', period: 'The beginning', title: 'A Partnership Born From Nothing', desc: 'Two people, one vision, and nothing but belief. FH Technology Ltd started here -- and Pasha was there from the first step.', icon: Sprout, color: '#5a9e8a' },
-  { year: 'Now', period: 'Today', title: 'Still Building. Still Going.', desc: 'The businesses, the sacrifices, the sleepless planning -- Pasha never stopped. She kept going when most people would have walked away.', icon: Rocket, color: 'var(--terracotta)' },
-  { year: 'Soon', period: 'The next chapter', title: 'RwandAir -- The Uniform, The Pride', desc: 'Frank sees it clearly: Pasha in that uniform, standing tall. Starting with RwandAir -- not as a dream, but as a plan in motion.', icon: Plane, color: 'var(--gold)' },
-  { year: 'Further', period: 'Even higher', title: 'Qatar Airways & Beyond', desc: "The sky is not the limit. It's just the beginning. Qatar Airways is a destination, not a fantasy -- and Pasha knows it.", icon: Globe, color: 'var(--wine)' },
-  { year: 'Always', period: 'The life she deserves', title: 'Peace, Love & Everything Beautiful', desc: "A peaceful home. A deep love. A life that finally gives back what she's given to the world. This is Pasha's future -- and it's bright.", icon: Heart, color: '#c0727a' },
+  { year: '2023', period: 'The beginning', title: 'A Partnership Born From Nothing', desc: 'Two people, one vision, and nothing but belief. FH Technology Ltd started here -- and You was there from the first step.', icon: Sprout, color: '#5a9e8a' },
+  { year: 'Now', period: 'Today', title: 'Still Building. Still Going.', desc: 'The businesses, the sacrifices, the sleepless planning -- Pasha you never stopped. She kept going when most people would have walked away.', icon: Rocket, color: 'var(--terracotta)' },
+  { year: 'Soon', period: 'The next chapter', title: 'RwandAir -- The Uniform, The Pride', desc: 'I see it clearly: Pasha in that uniform, standing tall. Starting with RwandAir -- not as a dream, but as a plan in motion.', icon: Plane, color: 'var(--gold)' },
+  { year: 'Further', period: 'Even higher', title: 'Qatar Airways & Beyond', desc: "The sky is not the limit. It's just the beginning. Qatar Airways is a destination, not a fantasy -- and you know that.", icon: Globe, color: 'var(--wine)' },
+  { year: 'Always', period: 'The life she deserves', title: 'Peace, Love & Everything Beautiful', desc: "A peaceful home. A deep love. A life that finally gives back what she's given to the world. This is your future -- and it's bright.", icon: Heart, color: '#c0727a' },
 ]
 
 function TlItem({ event, index, isLast }) {
