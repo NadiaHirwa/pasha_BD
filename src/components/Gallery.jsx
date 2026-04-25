@@ -14,12 +14,12 @@ import lifeGettingBrighter from '../assets/life_getting_brighter_2026.jpeg';
 // Replace the src values with actual image paths (e.g. '/photos/pasha1.jpg')
 // Put image files in the /public/photos/ folder
 const PHOTOS = [
-  { src: begun2023, caption: 'Where it all began — 2023', date: '2023' },
-  { src: buildFH2023, caption: 'Building FH Technology together', date: '2023' },
-  { src: alwaysMovingForward, caption: 'Always moving forward', date: '2024' },
-  { src: courageNeverWavers, caption: 'The courage that never wavers', date: '2024' },
-  { src: faithStrength, caption: 'Faith, strength, and a beautiful soul', date: '2024' },
-  { src: lifeGettingBrighter, caption: 'A life that keeps getting brighter', date: '2025' },
+  { src: begun2023, caption: 'Where it all began — 2023' },
+  { src: buildFH2023, caption: 'Building FH Technology together'},
+  { src: alwaysMovingForward, caption: 'Always moving forward' },
+  { src: courageNeverWavers, caption: 'The courage that never wavers' },
+  { src: faithStrength, caption: 'Faith, strength, and a beautiful soul' },
+  { src: lifeGettingBrighter, caption: 'A life that keeps getting brighter' },
 ]
 
 function PhotoCard({ photo, index, onClick }) {
