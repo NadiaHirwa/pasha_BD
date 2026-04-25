@@ -98,7 +98,10 @@ function Lightbox({ photos, index, onClose, onPrev, onNext }) {
   const [error, setError] = useState(false)
 
   useEffect(() => {
-    setLoaded(false); setError(false)
+    setTimeout(() => {
+      setLoaded(false);
+      setError(false);
+    }, 0);
   }, [index])
 
   useEffect(() => {
